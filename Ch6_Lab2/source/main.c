@@ -1,19 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include"dataInformation.h"
 
 int main()
 {
-	typedef struct _dates
-	{
-		int years, month, day;
-	}dates;
-
-	typedef struct _order
-	{
-		char num[11];  //訂單編號
-		dates date;    //訂貨日期
-		int amount;    //訂貨金額
-	}order;
+	
 
 	order ord1 = { "AHK08A1024",{1994,3,8},1487 };
 	order ord2 = { "USA08A1025",{2015,5,20},54530 };
